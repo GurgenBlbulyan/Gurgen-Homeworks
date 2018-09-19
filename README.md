@@ -1,2 +1,0 @@
-# Gurgen-Homeworks
-Homeworks
