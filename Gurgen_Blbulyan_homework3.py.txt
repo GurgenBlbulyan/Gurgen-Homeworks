@@ -1,0 +1,70 @@
+#1.first version
+list1=[3,6,True,True,-1,'abc',(1,2),[2,3],6]
+for i in range(len(list1)):
+    print(i+1)
+    if type(list1[i])==tuple:
+        print(i)
+        break
+
+#1.second version
+list1=[3,6,True,True,-1,'abc',(1,2),[2,3],6]
+for i in range(len(list1)):
+    print(len(list1[:i+1]))
+    if type(list1[i])==tuple:
+        print(i)
+        break
+
+#2.
+username=input("Username : ")
+password=input("Password : ")
+while username!="Batman" or password!="I am Batman":
+    username=input("Username : ")
+    password=input("Password : ")
+print("Welcom")   
+    
+#3.#karch tarberakov senc a linum bayc senc chi linum poxel mer uzac elementy ...orinaky nerqevum
+a=4*[4*[0]] 
+a=[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        if i==j:
+            a[i][j]=1
+        else :
+            a[i][j]=2
+print(a)
+
+a=4*[4*[0]]
+print(a)
+a[0][0]=2
+a
+
+#extr1.
+def mectar(gaxt):
+    c=0
+    alp='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    for i in alp :
+        if i in gaxt:
+            c=c+1
+    return c
+def tiv(er):
+    ertr=str(er)
+    b=0
+    di="0123456789"
+    for j in di:
+        if j in ertr :
+            b=b+1
+    return b
+password=input("Password: ")
+p=str(password)
+while len(p)<8 or mectar(gaxt=p)==0  or tiv(er=p)==0:
+        password=input("Password: ")
+        p=str(password)
+if len(p)>7 and mectar(gaxt=p)>0 and tiv(er=p)>0:
+    print('Welcome')
+
+#extr2.
+n=int(input("Input number to find factorial: "))
+a=1
+for i in range(n):
+    a=a*(i+1)
+print(a)
